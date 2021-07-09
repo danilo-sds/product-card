@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    background-color: #9420dd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .25);
+}
+
+.tag-img {
+    background-color: #edc7fb;
+    position: absolute;
+    color: #be43f3;
+    padding: 12px;
+    border-radius: 2px;
+}
+
+.box-img {
+    padding: 30px 50px;
+    text-align: center;
+}
+
+.box-img img {
+    max-height: 350px;
+}
+
+.box-info h1 {
+    font-size: 24px;
+    color: #353535;
+    line-height: 1;
+}
+
+.box-info h2 {
+    color: #808080;
+    font-size: 18px;
+}
+
+.preco h3 {
+    margin: 30px 0;
+    font-size: 30px;
+    color: #353535;
+}
+
+.box-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 10px 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    font-family: inherit;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: #808080;
+    background-color: #efefef;
+}
+
+.btn-secundary {
+    color: #fcf5ff;
+    background-color: #be43f3;
+}
+
+.box-btn .btn:first-child {
+    margin-right: 15px;
+}
+
+@media (max-width:600px) {
+    .box-img img {
+        max-height: 300px;
+    }
+    .box-btn {
+        flex-direction: column;
+    }
+    .box-btn .btn:first-child {
+        margin-bottom: 15px;
+    }
+    .box-info h1 {
+        font-size: 22px;
+    }
+}
